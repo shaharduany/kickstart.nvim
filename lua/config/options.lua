@@ -1,6 +1,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.opt.tabstop = 4
 vim.opt.virtualedit = 'block'
 
 -- Enable mouse mode, can be useful for resizing splits for example!
