@@ -24,7 +24,7 @@ return {
     formatters_by_ft = {
       lua = { 'stylua', stop_after_first = true },
       python = { 'isort', 'black', stop_after_first = true },
-      javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      javascript = { 'prettier', 'prettierd', stop_after_first = true },
     },
   },
 }

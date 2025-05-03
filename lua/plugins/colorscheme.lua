@@ -1,14 +1,13 @@
 return {
-  'folke/tokyonight.nvim',
+  'EdenEast/nightfox.nvim',
   priority = 1000, -- Make sure to load this before all the other start plugins.
   config = function()
     ---@diagnostic disable-next-line: missing-fields
-    require('tokyonight').setup {
+    require('nightfox').setup {
       styles = {
         comments = { italic = false }, -- Disable italics in comments
       },
     }
-    vim.cmd.colorscheme 'tokyonight-night'
+    vim.cmd.colorscheme 'nightfox'
   end,
 }
-
