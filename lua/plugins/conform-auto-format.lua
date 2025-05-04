@@ -14,7 +14,7 @@ return {
     },
   },
   opts = {
-    notify_on_error = false,
+    notify_on_error = true,
     format_on_save = function(bufnr)
       if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
         return
@@ -25,6 +25,9 @@ return {
       lua = { 'stylua', stop_after_first = true },
       python = { 'isort', 'black', stop_after_first = true },
       javascript = { 'prettier', 'prettierd', stop_after_first = true },
+    },
+    ft_parsers = {
+      vue = 'vue',
     },
   },
 }

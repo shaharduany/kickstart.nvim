@@ -20,6 +20,9 @@ return { -- Fuzzy Finder (files, lsp, etc)
     --  - Normal mode: ?
 
     require('telescope').setup {
+      defaults = {
+        layout_strategy = 'vertical',
+      },
       extensions = {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
